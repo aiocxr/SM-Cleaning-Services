@@ -1,0 +1,28 @@
+.page {
+  background-color: white;
+  max-width: 5120px;
+}
+
+.page__section {
+  padding: 0 3rem;
+}
+
+.header {
+  height: 75vh;
+  background-image: url("../images/home.jpg");
+  background-position: 0 bottom;
+  background-size: cover;
+}
+
+.nav {
+  padding: 3rem 2rem 0;
+}
+
+.nav__bar {
+  background-color: #f7f5e1;
+}
+
+.sparkle__logo-bar {
+  width: 100px;
+  height: 100px;
+}
