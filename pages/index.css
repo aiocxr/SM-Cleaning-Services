@@ -9,20 +9,54 @@
 
 .header {
   height: 75vh;
+  overflow: hidden;
   background-image: url("../images/home.jpg");
   background-position: 0 bottom;
   background-size: cover;
 }
 
 .nav {
-  padding: 3rem 2rem 0;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.nav__bar {
+.nav__container {
   background-color: #f7f5e1;
+  margin: 3rem 6rem 0;
 }
 
-.sparkle__logo-bar {
-  width: 100px;
-  height: 100px;
+.nav__logo-title {
+  font-size: 2rem;
+  padding: 0 0 0 0.5rem;
+  font-family: "roboto", sans-serif, "arial";
+  font-weight: 300;
+}
+
+.nav__list {
+  width: 50%;
+  padding: 0 13rem 0 3rem;
+  font-size: 2rem;
+  font-family: "roboto", sans-serif, "arial";
+  font-weight: 300;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__link {
+  display: flex;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.sparkle__logo-img {
+  width: 2rem;
+  height: 2rem;
+  padding: 0 0 0 6rem;
 }

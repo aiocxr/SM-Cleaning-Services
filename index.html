@@ -5,24 +5,32 @@
     <title>Cleaning Service</title>
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./pages/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="page">
     <header class="header page__section">
-      <nav class="nav">
-        <ul class="nav__bar">
-          <li>
+      <div class="nav__container">
+        <nav class="nav">
+          <div class="nav__logo">
             <img
-              class="sparkle__logo-bar"
+              class="sparkle__logo-img"
               src="./images/sparkle.png"
               alt="Sparkle Logo"
             />
-          </li>
-          <li class="nav__link">Brokerage</li>
-          <li class="nav__link">Homes/li></li>
-          <li class="nav__link">About Me</li>
-          <li class="nav__link">Contact</li>
-        </ul>
-      </nav>
+            <h5 class="nav__logo-title">SM Cleaning Services</h5>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__link">Plans</li>
+            <li class="nav__link">Services</li>
+            <li class="nav__link">About</li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <script src="./pages/index.js"></script>
   </body>
