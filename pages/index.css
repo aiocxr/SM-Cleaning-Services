@@ -4,15 +4,27 @@
 }
 
 .page__section {
-  padding: 0 3rem;
+  padding: 0 9rem;
 }
 
 .header {
-  height: 75vh;
+  position: relative;
+  height: 110vh;
   overflow: hidden;
   background-image: url("../images/home.jpg");
   background-position: 0 bottom;
   background-size: cover;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1;
 }
 
 .nav {
@@ -23,8 +35,10 @@
 }
 
 .nav__container {
+  position: relative;
+  z-index: 2;
   background-color: #f7f5e1;
-  margin: 3rem 6rem 0;
+  margin: 3rem 0 0;
 }
 
 .nav__logo-title {
@@ -36,7 +50,7 @@
 
 .nav__list {
   width: 50%;
-  padding: 0 13rem 0 3rem;
+  padding: 0 48px 0 55px;
   font-size: 2rem;
   font-family: "roboto", sans-serif, "arial";
   font-weight: 300;
@@ -59,4 +73,77 @@
   width: 2rem;
   height: 2rem;
   padding: 0 0 0 6rem;
+}
+
+.user__btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.user__img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.book-now__btn {
+  font-family: "roboto", sans-serif, "arial";
+  font-weight: 300;
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 35px;
+}
+
+.header__content {
+  width: 46%;
+  font-size: 3rem;
+  color: black;
+}
+
+.header__title {
+  font-family: "roboto", sans-serif, Arial, Helvetica;
+  font-weight: 500;
+  font-size: 6rem;
+  z-index: 2;
+}
+
+.header__caption {
+  font-family: "roboto", sans-serif, Arial, Helvetica;
+  font-weight: 400;
+  z-index: 2;
+}
+
+.header__title,
+.header__caption {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.content__booknow-btn {
+  position: relative;
+  z-index: 2;
+  font-family: "roboto", sans-serif, Arial, Helvetica;
+  font-weight: 300;
+  font-size: 35px;
+  background-color: #f7f5e1;
+  padding: 40px 125px;
+  border-radius: 75px;
+}
+
+.header__footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #f7f5e1;
+}
+
+.square__form {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  background-color: yellow;
 }
